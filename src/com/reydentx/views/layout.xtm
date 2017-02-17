@@ -19,6 +19,7 @@
     <script src="/public/js/home-controller.js" charset="utf-8"></script>
     <script src="/public/js/about-controller.js" charset="utf-8"></script>
     <script src="/public/js/contact-controller.js" charset="utf-8"></script>
+    <script src="/public/js/active-menu-controller.js" charset="utf-8"></script>
     <base href="/">
     <style media="screen">
         body {
@@ -43,12 +44,11 @@
           </button>
           <a class="navbar-brand" href="#">Project name</a>
         </div>
-          <div id="navbar" class="collapse navbar-collapse" ng-controller="globalCtrl">
+          <div id="navbar" class="collapse navbar-collapse" ng-controller="activeMenuCtrl">
           <ul class="nav navbar-nav">
-              [[testmsg]]
-            <li ng-class="{'active': $root.activeMenu == 'home'}"><a href="/home">Home[[test]]</a></li>
-            <li ng-class="{'active': $root.activeMenu == 'about'}"><a href="/about">About</a></li>
-            <li ng-class="{'active': $root.activeMenu == 'contact'}"><a href="/contact">Contact</a></li>
+            <li id="menu_home" class="menu"><a href="/home">Home</a></li>
+            <li id="menu_about" class="menu"><a href="/about">About</a></li>
+            <li id="menu_contact" class="menu"><a href="/contact">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>

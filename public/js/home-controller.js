@@ -1,6 +1,5 @@
 app.controller("homeCtrl", ['$scope', '$rootScope',
     function($scope, $rootScope) {
-        $rootScope.activeMenu = 'home';
         $scope.message = "This is HOME page";
         $scope.textToInsert = " sometext";
     }

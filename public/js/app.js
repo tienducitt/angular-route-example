@@ -20,9 +20,3 @@ app.config(function($routeProvider, $locationProvider, $interpolateProvider) {
     $locationProvider.html5Mode(true);
     $interpolateProvider.startSymbol('[[').endSymbol(']]');
 });
-
-app.controller("globalCtrl", ['$scope', '$rootScope',
-    function($scope, $rootScope) {
-        $scope.test = "this is a global message";
-    }
-]);
